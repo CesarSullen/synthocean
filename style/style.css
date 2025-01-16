@@ -263,6 +263,7 @@ a {
 
 .pricing-card {
   position: relative;
+  border-radius: 10px;
 }
 .pricing-card .card-title {
   font-size: 2rem;
