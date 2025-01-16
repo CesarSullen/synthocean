@@ -21,7 +21,7 @@
 
 // Colors
 $primary-color: #0b00e0;
-
+$secondary-color: #add6ff;
 $deep-shadow: 0 2px 12px #0f0f0f;
 
 // Utilities
@@ -43,7 +43,7 @@ hr {
 	background-color: white;
 }
 .section {
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	padding: 1rem;
 }
 .hidden {
@@ -114,5 +114,5 @@ body {
 	gap: 10px;
 }
 a {
-	color: #add6ff;
+	color: $secondary-color;
 }
