@@ -24,7 +24,7 @@
 }
 .sidebar {
 	top: 0px;
-	backdrop-filter: blur(15px);
+	backdrop-filter: brightness(0.1) blur(5px);
 	display: flex;
 	position: fixed;
 	width: 100%;
@@ -124,6 +124,7 @@
 .our-work-img {
 	width: 100%;
 	max-width: 400px;
+	border-radius: 20px;
 }
 .our-work-list {
 	display: flex;
@@ -159,6 +160,37 @@
 	width: 100%;
 }
 
+// Footer
+.footer {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	color: white;
+	max-width: 1100px;
+	margin: auto;
+	text-align: center;
+}
+.social-area {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+.footer-area {
+	display: flex;
+	flex-direction: column;
+}
+.social-title {
+	text-transform: uppercase;
+}
+.company-link {
+	text-transform: capitalize;
+}
+.copyright-area {
+	color: #add6ff;
+}
+.social-link {
+	width: 50px;
+}
 //Desktop
 @media screen and (min-width: 700px) {
 	.toggle-btn {
@@ -285,5 +317,18 @@
 			grid-column: 3;
 			grid-row: 3;
 		}
+	}
+
+	// Footer
+	.footer {
+		text-align: left;
+	}
+	.social-area {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.copyright-area {
+		display: flex;
+		gap: 100px;
 	}
 }
