@@ -101,7 +101,7 @@ body {
 .card {
   box-shadow: 0 2px 12px #0f0f0f;
   padding: 1rem;
-  background: #0b00e0;
+  background: linear-gradient(to bottom, #0b00e0, rgba(11, 0, 224, 0.4));
   border-radius: 15px;
   display: flex;
   flex-direction: column;
