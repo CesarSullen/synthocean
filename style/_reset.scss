@@ -42,10 +42,7 @@ hr {
 	height: 1px;
 	background-color: white;
 }
-.section {
-	margin-bottom: 1rem;
-	padding: 1rem;
-}
+
 .hidden {
 	display: none;
 }
@@ -90,7 +87,6 @@ hr {
 }
 body {
 	background-image: url(../assets/background.png);
-	background-size: cover;
 	backdrop-filter: blur(60px) brightness(0.7);
 }
 .body-container {
@@ -99,14 +95,12 @@ body {
 	margin: auto;
 	display: grid;
 	grid-template-columns: 1fr;
-
-	gap: 50px;
 	color: white;
+	gap: 30px;
 }
 .card {
 	box-shadow: $deep-shadow;
 	padding: 1rem;
-
 	background: $primary-color;
 	border-radius: 15px;
 	display: flex;
