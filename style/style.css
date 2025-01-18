@@ -90,18 +90,18 @@ body {
 
 .body-container {
   padding: 1rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   color: white;
-  gap: 30px;
+  gap: 50px;
 }
 
 .card {
   box-shadow: 0 2px 12px #0f0f0f;
   padding: 1rem;
-  background: linear-gradient(to bottom, #0b00e0, rgba(11, 0, 224, 0.4));
+  background: linear-gradient(to bottom, #0b00e0, rgba(11, 0, 224, 0.6));
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -114,15 +114,15 @@ a {
 }
 
 .navbar {
-  padding-block: 0.5rem;
+  position: sticky;
   padding-inline: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
   top: 0px;
   width: 100%;
   z-index: 1000;
+  backdrop-filter: blur(1px);
 }
 
 .navbar-icon {
@@ -139,21 +139,21 @@ a {
 }
 
 .sidebar {
-  top: 0px;
-  backdrop-filter: brightness(0.1);
   display: flex;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  max-height: 900px;
+  min-height: 900px;
   transform: translateX(-200%);
   padding: 1rem;
+  backdrop-filter: brightness(0.1);
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .sidebar-link {
@@ -283,7 +283,7 @@ a {
 
 .our-work-img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   border-radius: 20px;
 }
 
@@ -307,6 +307,12 @@ a {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.why-us-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .why-us-cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -322,12 +328,43 @@ a {
   width: 100%;
 }
 
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+}
+.contact-form .btn {
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.form-input {
+  padding: 12px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  width: 100%;
+  overflow: auto;
+  resize: none;
+}
+
+.form-input-title {
+  margin-top: 15px;
+}
+
+.form-title {
+  font-size: 1.8rem;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   color: white;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   text-align: center;
 }
@@ -363,9 +400,6 @@ a {
   .toggle-btn {
     display: none;
   }
-  .navbar {
-    justify-content: space-around;
-  }
   .navbar-icon {
     width: 60px;
   }
@@ -386,7 +420,6 @@ a {
     width: 20px;
   }
   .navbar-links .btn {
-    border-radius: 100vh;
     text-transform: uppercase;
   }
   .navbar-link {
@@ -451,6 +484,7 @@ a {
   }
   .pricing-card {
     max-width: 400px;
+    background-color: #0b00e0;
   }
   .pricing-card:first-child {
     transform: rotateZ(-3deg) translateX(15px);
@@ -466,21 +500,22 @@ a {
     display: flex;
     justify-content: space-around;
   }
+  .why-us-section {
+    flex-direction: row;
+    gap: 5px;
+  }
   .why-us-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 0;
-    background: #0e0d0d;
-    padding: 1.5rem 0rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
     border-radius: 15px;
+    max-height: 650px;
   }
   .why-us-title {
     margin-top: 10%;
-  }
-  .why-us-card {
-    margin: -10px;
-    width: 90%;
   }
   .why-us-card:nth-child(1) {
     grid-column: 2;
