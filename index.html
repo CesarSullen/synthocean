@@ -15,68 +15,64 @@
 		<title>SynthOcean</title>
 	</head>
 
-	<header>
-		<nav class="navbar">
-			<img src="./assets/logo.png" class="navbar-icon" />
+	<nav class="navbar">
+		<img src="./assets/logo.png" class="navbar-icon" />
 
-			<button id="toggleBtn" class="toggle-btn">
-				<span class="line"></span>
-				<span class="line"></span>
-				<span class="line"></span>
-			</button>
+		<button id="toggleBtn" class="toggle-btn">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</button>
 
-			<ul class="navbar-links">
-				<li>
-					<a href="#Services" class="navbar-link">
-						<p>Services</p>
-					</a>
-				</li>
-				<li>
-					<a href="#Pricing" class="navbar-link">
-						<p>Pricing</p>
-					</a>
-				</li>
-				<li>
-					<a href="#ourWork" class="navbar-link">
-						<p>Our Work</p>
-					</a>
-				</li>
-				<li>
-					<a href="#whyUs" class="navbar-link">
-						<p>Why Us?</p>
-					</a>
-				</li>
-			</ul>
-
+		<ul class="navbar-links">
+			<li>
+				<a href="#Services" class="navbar-link">
+					<p>Services</p>
+				</a>
+			</li>
+			<li>
+				<a href="#Pricing" class="navbar-link">
+					<p>Pricing</p>
+				</a>
+			</li>
+			<li>
+				<a href="#ourWork" class="navbar-link">
+					<p>Our Work</p>
+				</a>
+			</li>
+			<li>
+				<a href="#whyUs" class="navbar-link">
+					<p>Why Us?</p>
+				</a>
+			</li>
 			<a href="" class="navbar-btn">
 				<button class="btn">Let's Talk</button>
 			</a>
-		</nav>
-		<nav>
-			<ul id="sideBar" class="sidebar">
-				<li>
-					<a href="#Services" class="sidebar-link">
-						<p>Services</p>
-					</a>
-				</li>
-				<li>
-					<a href="#Pricing" class="sidebar-link">
-						<p>Pricing</p>
-					</a>
-				</li>
-				<li>
-					<a href="#ourWork" class="sidebar-link">
-						<p>Our Work</p>
-					</a>
-				</li>
-				<li>
-					<a href="#WhyUs" class="sidebar-link">
-						<p>Why Us?</p>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+		</ul>
+
+		<ul id="sideBar" class="sidebar">
+			<li>
+				<a href="#Services" class="sidebar-link">
+					<p>Services</p>
+				</a>
+			</li>
+			<li>
+				<a href="#Pricing" class="sidebar-link">
+					<p>Pricing</p>
+				</a>
+			</li>
+			<li>
+				<a href="#ourWork" class="sidebar-link">
+					<p>Our Work</p>
+				</a>
+			</li>
+			<li>
+				<a href="#whyUs" class="sidebar-link">
+					<p>Why Us?</p>
+				</a>
+			</li>
+		</ul>
+	</nav>
 
 	<body>
 		<div class="body-container">
@@ -90,7 +86,7 @@
 					</p>
 					<div class="cta-section">
 						<a href=""><button class="btn">Get's Started</button></a>
-						<a href=""
+						<a href="#contactForm"
 							><button class="btn ghost-btn">
 								Request a Free Consultation
 							</button></a
@@ -298,6 +294,42 @@
 							aperiam.
 						</p>
 					</div>
+				</div>
+
+				<div class="contact-form" id="contactForm">
+					<div class="form-info">
+						<h1 class="form-title">
+							Got ideas? We've got the skills. Let's team up!
+						</h1>
+						<div class="form-subtitle">
+							Tell us more about Yourself and what you're got in mind.
+						</div>
+					</div>
+
+					<h2 class="form-input-title">Name</h2>
+					<input
+						type="text"
+						name="name"
+						id=""
+						class="form-input"
+						placeholder="Enter your name"
+					/>
+					<h2 class="form-input-title">E-mail</h2>
+					<input
+						type="email"
+						name="email"
+						id=""
+						class="form-input"
+						placeholder="Enter your e-mail"
+					/>
+					<h2 class="form-input-title">Message</h2>
+
+					<textarea
+						name="message"
+						class="form-input"
+						placeholder="Your message goes here"
+					></textarea>
+					<input type="button" value="Let's get started" class="btn" />
 				</div>
 			</div>
 		</div>
