@@ -90,8 +90,9 @@ hr {
 	color: red;
 }
 body {
+	background-color: black;
 	background-image: url(../assets/background.png);
-	backdrop-filter: blur(60px) brightness(0.7);
+	backdrop-filter: blur(30px) brightness(0.7);
 }
 .body-container {
 	padding: 1rem;
