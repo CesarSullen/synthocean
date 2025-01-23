@@ -443,3 +443,112 @@
 		gap: 100px;
 	}
 }
+.ocean {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+	filter: blur(5px) /* brightness(0.5) */;
+}
+
+.wave {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation-name: moveWave;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	opacity: 0.8;
+}
+
+.wave1 {
+	animation-duration: 20s;
+	top: 100%;
+}
+
+.wave2 {
+	animation-duration: 25s;
+	top: 90%;
+}
+
+.wave3 {
+	animation-duration: 30s;
+	top: 80%;
+}
+
+.wave4 {
+	animation-duration: 35s;
+	top: 70%;
+}
+
+.wave5 {
+	animation-duration: 40s;
+	top: 60%;
+}
+
+.wave6 {
+	animation-duration: 45s;
+	top: 50%;
+}
+
+.wave7 {
+	animation-duration: 40s;
+	top: 40%;
+}
+
+.wave8 {
+	animation-duration: 35s;
+	top: 30%;
+}
+
+.wave9 {
+	animation-duration: 30s;
+	top: 20%;
+}
+
+.wave10 {
+	animation-duration: 25s;
+	top: 10%;
+}
+
+.wave11 {
+	animation-duration: 20s;
+	top: 0%; /* Comienza desde el top */
+}
+
+.wave12 {
+	animation-duration: 25s;
+	top: -10%; /* Un poco más alto que la primera */
+}
+
+.wave13 {
+	animation-duration: 30s;
+	top: -20%;
+}
+
+.wave14 {
+	animation-duration: 35s;
+	top: -30%;
+}
+
+.wave15 {
+	animation-duration: 40s;
+	top: -40%; /* La última ola empieza más arriba */
+}
+
+@keyframes moveWave {
+	0% {
+		transform: translateY(25%);
+		width: 300%;
+	}
+	50% {
+		transform: translateY(-25%);
+	}
+	100% {
+		transform: translateY(-50%);
+		width: 500%;
+	}
+}
