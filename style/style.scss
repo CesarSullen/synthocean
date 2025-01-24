@@ -456,11 +456,11 @@
 }
 .wave {
 	animation: moveWave ease-in-out infinite;
-	scale: 2.5;
+	position: absolute;
 }
 
 .wave1 {
-	animation-duration: 6s;
+	animation-duration: 5s;
 }
 
 .wave2 {
@@ -468,7 +468,7 @@
 }
 
 .wave3 {
-	animation-duration: 8s;
+	animation-duration: 9s;
 }
 
 @keyframes moveWave {
@@ -479,7 +479,7 @@
 		transform: translateY(5%) scale(2);
 	}
 	60% {
-		transform: translateY(10%) scale(3);
+		transform: translateY(10%) scale(2);
 	}
 	100% {
 		transform: translateY(0%) scale(2.5);
