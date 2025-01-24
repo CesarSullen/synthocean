@@ -87,7 +87,6 @@ body {
   background-color: black;
   background-image: url(../assets/background.png);
   backdrop-filter: blur(30px) brightness(0.7);
-  overflow-x: hidden;
 }
 
 .body-container {
@@ -556,19 +555,25 @@ a {
     gap: 100px;
   }
 }
-.wave {
-  position: absolute;
-  filter: blur(5px) brightness(0.7);
-  z-index: -1;
+.ocean {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  animation: moveWave ease-in-out infinite;
+  overflow-x: hidden;
+  z-index: -1;
   opacity: 0.5;
+  filter: blur(5px) brightness(0.7);
+}
+
+.wave {
+  animation: moveWave ease-in-out infinite;
   scale: 2.5;
 }
 
 .wave1 {
-  animation-duration: 5s;
+  animation-duration: 6s;
 }
 
 .wave2 {
@@ -576,21 +581,21 @@ a {
 }
 
 .wave3 {
-  animation-duration: 9s;
+  animation-duration: 8s;
 }
 
 @keyframes moveWave {
   0% {
-    transform: translateY(25%) scale(3);
+    transform: translateY(0%) scale(2.5);
   }
   40% {
-    transform: translateY(-25%) scale(2);
+    transform: translateY(5%) scale(2);
   }
   60% {
-    transform: translateY(-50%) scale(3);
+    transform: translateY(10%) scale(3);
   }
   100% {
-    transform: translateY(25%) scale(2);
+    transform: translateY(0%) scale(2.5);
   }
 }
 
