@@ -124,7 +124,6 @@ a {
   top: 0px;
   width: 100%;
   z-index: 1000;
-  backdrop-filter: blur(1px);
 }
 
 .navbar-icon {
