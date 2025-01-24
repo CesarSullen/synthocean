@@ -93,6 +93,7 @@ body {
 	background-color: black;
 	background-image: url(../assets/background.png);
 	backdrop-filter: blur(30px) brightness(0.7);
+	overflow-x: hidden;
 }
 .body-container {
 	padding: 1rem;
