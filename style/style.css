@@ -564,7 +564,7 @@ a {
   overflow-x: hidden;
   z-index: -1;
   opacity: 0.5;
-  filter: blur(5px) brightness(0.7);
+  filter: blur(5px);
 }
 
 .wave {
@@ -573,29 +573,29 @@ a {
 }
 
 .wave1 {
-  animation-duration: 5s;
+  animation-duration: 20s;
 }
 
 .wave2 {
-  animation-duration: 7s;
+  animation-duration: 22s;
 }
 
 .wave3 {
-  animation-duration: 9s;
+  animation-duration: 24s;
 }
 
 @keyframes moveWave {
   0% {
-    transform: translateY(0%) scale(2.5);
+    transform: translateX(-50%) translateY(0%) scale(2.5);
   }
   40% {
-    transform: translateY(5%) scale(2);
+    transform: translateX(50%) translateY(5%) scale(2);
   }
   60% {
-    transform: translateY(10%) scale(2);
+    transform: translateX(0%) translateY(10%) scale(3);
   }
   100% {
-    transform: translateY(0%) scale(2.5);
+    transform: translateX(-50%) translateY(0%) scale(2.5);
   }
 }
 
